@@ -3,9 +3,22 @@ layout: default
 ---
 
 <div class="home">
+  <div class='abstract'>
+    <p>Single-cell proteomics, Mass Spectrometry, Computational Biology</p>
+    <p><a href="https://slavovlab.net/" target="_blank" rel="noopener noreferrer" title="Slavov Lab">Slavov Lab</a></p>
+    <ul class="social-media-list">
+      <li><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" target="_blank" rel="noopener noreferrer"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a></li>
+      <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" target="_blank" rel="noopener noreferrer"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg></a></li>
+      <li><a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}" target="_blank" rel="noopener noreferrer"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg></a></li>
+      <li><a href="https://orcid.org/{{ site.orcid_username| cgi_escape | escape }}" target="_blank" rel="noopener noreferrer"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#orcid' | relative_url }}"></use></svg></a></li>
+    </ul>    
+    <hr />
+  </div>
+  <hr />
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
+  
 
   {{ content }}
 

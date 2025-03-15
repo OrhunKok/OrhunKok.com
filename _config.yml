@@ -27,6 +27,7 @@ url: "https://orhunkok.com" # the base hostname & protocol for your site, e.g. h
 twitter_username: KokOrhun
 github_username: OrhunKok
 linkedin_username: OrhunKok
+orcid_username: 0009-0002-9764-9094
 
 # Build settings
 theme: minima
