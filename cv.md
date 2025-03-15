@@ -1,3 +1,5 @@
+---
 layout: page
-title: "CV"
-permalink: /CV
+title: CV
+permalink: /cv/
+---
