@@ -4,6 +4,7 @@ title: Multiprocessing .RAW files with ThermoRawFileParser
 date: '2025-03-16'
 categories:
 - Mass Spectrometry
+- Code
 tags:
 - mass-spec
 - proteomics
