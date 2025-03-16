@@ -22,7 +22,7 @@ title: Orhun Kok
 email: kok.o@northeastern.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Single-cell proteomics, Mass Spectrometry, Computational Biology
-baseurl: "" # the subpath of your site, e.g. /blog
+#baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://orhunkok.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: KokOrhun
 github_username: OrhunKok
