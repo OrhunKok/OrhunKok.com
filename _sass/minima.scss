@@ -12,9 +12,10 @@ $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
-$brand-color:      #2a7ae2 !default;
+$brand-color:      rgb(132, 0, 240) !default;
+$brand-color-hover:      rgba(132, 0, 240, 0.85) !default;
 
-$grey-color:       #828282 !default;
+$grey-color:       #111 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
@@ -41,6 +42,28 @@ $on-laptop:        800px !default;
 
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
+}
+
+@mixin hyperlink {
+  // text-decoration: underline;
+    background-color: #111;
+    padding: 2px;
+    color: #ffffff;
+
+  // &:hover {
+  //   background-color: #111;
+  //   color: #ffffff;
+  // }
+}
+
+@mixin dash-separator {
+  border: dashed 2px #111;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@mixin serif {
+  font: 400 16px/1.5 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 // Import partials.

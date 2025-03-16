@@ -30,9 +30,26 @@ linkedin_username: OrhunKok
 orcid_username: 0009-0002-9764-9094
 
 # Build settings
+markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+
+collections:
+  projects:
+    output: true
+    sort_by: date
+  cv:
+    output: true
+  tags:
+    output: true
+
+defaults:
+  - scope:
+      type: projects
+    values:
+      layout: "project"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

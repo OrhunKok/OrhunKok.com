@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="home">
+
   <div class='bio-description'>
     <p>Single-cell proteomics, Mass Spectrometry, Computational Biology<a href="https://slavovlab.net/" target="_blank" rel="noopener noreferrer" title="Slavov Lab" style="text-decoration: underline;"> @ Slavov Lab</a></p>
     <ul class="social-media-list">
@@ -14,45 +15,7 @@ layout: default
     </ul>    
     <hr class="dash-separator">
   </div>
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-  
 
-  {{ content }}
-  <div class='row'>
-
-    <div class='left-col'>
-      <!-- <div class='all-posts'>
-        <a href="/all" class="left-title">All Posts</a>
-      </div> -->
-      <h3 class='left-title'>Recent Posts</h3>
-      <div class='recent-posts'>
-        <ul>
-        {% for post in site.posts limit:15 %}
-          <li>
-            <a href="{{ post.url }}" title="{{ post.title }}">[{{ post.date | date: "%Y-%m-%d" }}] {{ post.title }}</a>
-          </li>
-        {% endfor %}
-        </ul>
-      </div>
-    </div>
-
-    <div class='right-col'>
-      <div class='popout'>
-        <h3 class='right-title'>Projects</h3>
-        {%- include projects.html -%}
-
-        <div class='categories'>
-          <h3 class='right-title'>Categories</h3>
-          {% for category in site.categories %}
-          {% assign category_name = category | first %}
-          <a href="{{ "category/" | append: category_name | relative_url }}", title="All posts under {{ category_name }}">{{ category_name }}</a>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-
-  </div>
+  {{ content  }}
 
 </div>

@@ -1,0 +1,17 @@
+<div class='projects-wrapper'>
+
+    <div class='project-list'>
+      {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+      {%- for project in sorted_projects -%}
+      <a class='project' href='{{ project.id | relative_url }}' title="{{ project.title }}">
+        <div class='image' style='background-image:url("{{ site.baseurl }}{{ project.permalink}}/{{ project.banner_img }}")'></div>
+        <div class='image-cover'></div>
+        <div class='infobox'>
+          <span class='title'>{{ project.box_title }}</span>
+          <span class='desc'>{{ project.box_desc }}</span>
+        </div>
+      </a>
+      {%- endfor -%}
+  
+    </div>
+  </div>
