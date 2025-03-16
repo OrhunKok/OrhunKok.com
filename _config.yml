@@ -28,8 +28,7 @@ twitter_username: KokOrhun
 github_username: OrhunKok
 linkedin_username: OrhunKok
 orcid_username: 0009-0002-9764-9094
-google_analytics:
-  id: "G-BPMF20J64S"
+google_analytics: "G-BPMF20J64S"
 
 # Build settings
 markdown: kramdown
