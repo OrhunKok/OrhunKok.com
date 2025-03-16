@@ -366,13 +366,16 @@
   .post-content {
     margin-top: 20px;
     @include serif();
-
+    a {
+      font-weight: bold;
+    }
     h1,
     h2,
     h3,
     h4,
     h5,
     h6 {
+      font-weight: bold;
       a.anchor-link {
         visibility: hidden;
         transition: 0.1s all ease-in-out;
