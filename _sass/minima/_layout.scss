@@ -15,10 +15,10 @@
 
     .site-title {
       line-height: $base-line-height;
-      letter-spacing: 2px;
+      letter-spacing: 0px;
       font-weight: 800;
       font-size: 3em;
-      margin-right: 35px;
+      margin-right: 50px;
     }
 
     nav.site-nav {
@@ -34,9 +34,9 @@
         font-size: 1.5em;
         font-weight: 800;
         line-height: $base-line-height;
-        display: inline-block; /* Add this line */
-        width: 100px; /* Add this line (adjust as needed) */
-        text-align: center; /* Center the text */
+        display: inline-block;
+        width: 100px;
+        text-align: center;
         
         &:not(:last-child) {
           margin-right: 20px;
@@ -336,19 +336,30 @@
 
 
 /**
- * Posts
+ * Post
  */
  article.post {
   header.post-header {
     margin-bottom: 15px;
     margin-top: 10px;
 
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      @include dash-separator();
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
     p.post-meta {
       margin-bottom: 3px;
     }
     time.dt-published {
+      font-weight: bold;
       font-size: 1.15em;
     }
+
     div.category-meta,
     div.tag-meta {
       font-size: 0.9em;

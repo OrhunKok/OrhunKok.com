@@ -62,7 +62,8 @@ find "$DATA_DIR" -type f -name "*.raw" -print0 |
   '
 {% endhighlight %}
 
-**Performance Comparison:**
+Performance Comparison
+============
 
 For testing I used 5 single-cell mixed-species runs from an Exploris 480, which is not a very in-depth test but it gets the main point across. Keep in mind that I'm testing this at home with an AMD Ryzen 5 3600 6-Core 3.60 GHz, so nothing fancy.
 
